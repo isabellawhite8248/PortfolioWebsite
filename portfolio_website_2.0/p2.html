@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bella White Portfolio Website</title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <!-- Update these with your own fonts--> 
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <p>isabella_white@brown.edu</p>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class = "nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+         <!-- Introduction -->
+        <h1 class="subpage-heading">
+            Travel Planner
+        </h1>
+
+        <div class="subpage-body">
+            <p>The travel planner project was a partner project in my CS 200 class regarding data structures and algorithms. 
+                We implemented Dijkstra's algorithm and breath width first search to allow the user to upload any travel graph 
+                to the program and it would inform the user the cheapest or shortest route towards his or her destination. 
+                The algorithms written maximized the efficiency of the seach and took into account edge cases such as 
+                circular paths and/or paths to nonexistent nodes. The project was coded entirely in java and we utilized IntelliJ. </p>
+        </div>
+
+        <!-- Footer--> 
+        <footer class="footer">
+            <!--replace with your own email address-->
+            <a href="mailto:isabella_white@brown.edu" class="footer-link">isabella_white@brown.edu</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/isabella-white-a855061a8/">
+                        <img src="images/linkedIn.jpeg" alt="portfolio__img">
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/isabella-white?tab=repositories">
+                        <img src="images/gitHub.png" alt="portfolio__img">
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="images/reumePic.png">
+                        <img src="images/resume.jpg" alt="portfolio__img">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <script src="js/index.js"></script</script>
+    </body>
+</html>

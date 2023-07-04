@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bella White Portfolio Website</title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <!-- Update these with your own fonts--> 
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <p>isabella_white@brown.edu</p>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class = "nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <h1 class="subpage-heading">
+            GrassHopper Animation
+        </h1>
+
+        <div class="subpage-body">
+            <p>     This was a personal project coded in Java with IntelliJ. I wanted to animate my drawings because I enjoy drawing in my free time and had an idea to utilize digital stipling techniques to compile an array of dots and allow the user to animate any drawing of their choice. 
+                The program has two components, one piece allows the user to upload their artwork to the program and trace over it using a pen tool. And another seperate section to animate their drawing. Buttons function to lift the stencil image on and off the page, and a pen tool 
+                listens for the drag of the user's mouse, enabling him/her to draw.
+                 </p>
+                 <p>        Once the drawing is complete, it is then stored in a text file of coordinates. Each coordinate maps a dot location. If the text file is beyond a certain length, 
+                    the resolution of the image, or how many dot locations is lowered to reduce compile time. After the text file is complete, the artist then compiles the text file into the animation 
+                    section of the program, where the dots can be manipulated and the image itself can be animated. </p>
+                    <p>     In the sample clip, I traced my drawing of a grasshopper and coded bound boxes around each point's original location. Then, at the beginning of 
+                    the timeline the dots roam aimlessly, but after the shift, signaled by a bottle clinking sound, the dots flood back to their respective bound boxes, stored in an arraylist previously.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/X-JFCNF2CpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- Footer--> 
+        <footer class="footer">
+            <!--replace with your own email address-->
+            <a href="mailto:isabella_white@brown.edu" class="footer-link">isabella_white@brown.edu</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/isabella-white-a855061a8/">
+                        <img src="images/linkedIn.jpeg" alt="portfolio__img">
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/isabella-white?tab=repositories">
+                        <img src="images/gitHub.png" alt="portfolio__img">
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="images/reumePic.png">
+                        <img src="images/resume.jpg" alt="portfolio__img">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <script src="js/index.js"></script</script>
+    </body>
+</html>

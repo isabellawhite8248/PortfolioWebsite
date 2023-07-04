@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bella White Portfolio Website</title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <!-- Update these with your own fonts--> 
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <p>isabella_white@brown.edu</p>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class = "nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Courses</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                <strong><span style="background-color: #f5d499">Hi, I am <br>Bella White </span></strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro"> Providence, RI</p>
+            <img src="images/profile.png" alt="a picture of Bella White smiling" class="intro__img">
+        </section>
+
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">Courses</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Computer Science</h3>
+                    <p>CSCI 0150: Intro to Programming and CompSci (Spring 2021) <br>
+                    CSCI 0100: Data Fluency for All (Fall 2021) <br>
+                    CSCI 0200: Program Design, Data Structures and Algorithms (Spring 2022) <br>
+                    CSCI 0220: Discrete Structures/Probability (Fall 2022) <br>
+                    CSCI 0330: Introduction to Computer Systems (Fall 2022) <br>
+                    CSCI 1470: Deep Learning (Fall 2022) 
+                    </p>
+                </div> <!-- /service -->
+
+                <div class="service">
+                    <h3>Mathematics</h3>
+                    <p>Introductory Calculus (waived) <br>
+                    Math 190: Advanced Placement Calculus (Spring 2021) <br>
+                    Math 200: Intermediate Calculus (Summer 2021) <br>
+                    Math 520: Linear Algebra (Fall 2021) <br>
+                    Apma 1650: Statistical Inference I (Spring 2022)
+                    </p>
+                </div> <!-- /service -->
+
+                <div class="service">
+                    <h3>Misc</h3>
+                    <p>
+                        Drug War Politics (Fall 2020) <br>
+                        Introduction to Engineering (Spring 2021) <br>
+                        BIOL 0940: Rhode Island Flora: Local Plant (Fall 2021) <br>
+                        UNIV 0400: Literature of C.S. Lewis (Spring 2022) <br>
+                        ITAL 1260: Truth and Trial: Justice in Italy (Summer 2021)
+                    </p>
+                </div> <!-- /service -->
+            </div> <!-- /services-->
+        </section>
+
+        <!-- About me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">About Me</h2>
+            <p class="section__subtitle section__subtitle--about"></p>
+
+            <div class="about-me__body">
+                <p>Currently a junior at Brown University, I'm working towards a Sc.B degree in Computer Science. 
+                    I am passionate about solving problems through coding with a particular interest in data science, 
+                    artificial intelligence and visual computing. </p>
+                <p>When I am not coding, I enjoy swimming, reading books and watching movies. 
+                    Feel free to reach out with any recomendations!</p>
+            </div>
+
+            <img src="images/other.jpg" alt="Bella being Bella" class="about-me__img">  
+        </section>
+
+        <!-- My work-->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">Projects</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+            <div class="portfolio">
+                <!--Portfolio item 01-->
+                <a href="#" class="portfolio__item">
+                    <img src="images/p1.png" alt="portfolio__img">
+                </a>
+
+
+                <!--Portfolio item 02-->
+                <a href="#" class="portfolio__item">
+                    <img src="images/p2.png" alt="portfolio__img">
+                </a>
+
+
+                <!--Portfolio item 03-->
+                <a href="#" class="portfolio__item">
+                    <img src="images/p3.png" alt="portfolio__img">
+                </a>
+
+                <!--Portfolio item 04-->
+                <a href="#" class="portfolio__item">
+                    <img src="images/p4.png" alt="portfolio__img">
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Footer--> 
+        <footer class="footer">
+            <!--replace with your own email address-->
+            <a href="mailto:hello@bella.dev" class="footer-link">hello@bella.dev</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.google.com/?client=safari">
+                        <img src="images/profile.png" alt="portfolio__img">
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.google.com/?client=safari">
+                        <img src="images/profile.png" alt="portfolio__img">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <script src="js/index.js"></script</script>
+    </body>
+</html>
